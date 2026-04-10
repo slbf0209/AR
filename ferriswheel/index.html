@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>ferriswheel</title>
+    <meta charset="utf-8">
+    <meta name="description" content="&lt;model-viewer&gt; template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="./styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <!-- <model-viewer> HTML element -->
+    <model-viewer src="Mar 13 at 11_16 AM (1).glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1" auto-rotate scale="0.5 0.5 0.5">
+      <button class="Hotspot" slot="hotspot-1" data-position="-0.041215017764249184m 0.08942335249541167m -0.00576409559201585m" data-normal="-0.8891392157815174m -0.2691461523501117m 0.37012403817444606m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">摩天輪</div>
+      </button>
+      <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+      </div>
+      <button slot="ar-button" id="ar-button">
+          View in your space
+      </button>
+      <div id="ar-prompt">
+          <img src="ar_hand_prompt.png">
+      </div>
+    </model-viewer>  
+    <script src="script.js"></script>
+    <!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.1.0/model-viewer.min.js"></script>
+  </body>
+</html>
